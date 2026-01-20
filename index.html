@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Nota del Alumno</title>
+</head>
+<body>
+    <h1>Verificar nota del alumno</h1>
+
+    <!-- Botón que llama a la función -->
+    <button onclick="verificarNota()">Ingresar nota</button>
+
+    <script>
+        // Función que pide la nota y muestra si aprueba o suspende
+        function verificarNota() {
+            // Pedir la nota al usuario
+            let nota = prompt("Introduce la nota del alumno (1-10):");
+
+            // Convertir la nota a número
+            nota = parseInt(nota);
+
+            // Revisar si la nota es menor que 5
+            if (nota < 5) {
+                alert("El alumno suspende");
+            } else {
+                alert("El alumno aprueba");
+            }
+        }
+    </script>
+</body>
+</html>
